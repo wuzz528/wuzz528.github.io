@@ -1,7 +1,7 @@
 # Utility to debug Java connections to SSL servers
 If the certificate of the host is not valid (self signed) or didn't well configured in java keystore, then it will fail to connect.
 
-{% highlight java %}
+{% highlight java linenos=table %}
 
 import java.io.InputStream;
 import java.io.OutputStream;
