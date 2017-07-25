@@ -61,4 +61,4 @@ public class SSLPoke
 
 ----------
 
-***If can't connect to SSL connection, please use [portecle](http://portecle.sourceforge.net/ "portecle") to import the host's certificate into java keystore and test again.***
+***If can't connect to SSL server, please use [portecle](http://portecle.sourceforge.net/ "portecle") to import the host's certificate into java keystore and test again.***
