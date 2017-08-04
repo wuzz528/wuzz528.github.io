@@ -41,17 +41,17 @@ Download the Hadoop binary file from apache site to master server, and configure
 * Configure `core-site.xml` as  
   ```xml
   <configuration>
-	  <property>
-	       <name>hadoop.tmp.dir</name>
-	       <value>/usr/hadoop/tmp</value>
-	  </property>
-	  <property>
-	       <name>fs.default.name</name>
-	       <value>hdfs://$Master IP:9000</value>
-	  </property>
-   </configuration>
-   ```  
-   > Make sure the path of hadoop.tmp.dir exists, and ***don't put it under /tmp***   
+    <property>  
+      <name>hadoop.tmp.dir</name>
+      <value>/usr/hadoop/tmp</value>
+    </property>
+    <property>
+      <name>fs.default.name</name>
+      <value>hdfs://$Master IP:9000</value>
+    </property>
+  </configuration>
+  ```  
+  > Make sure the path of hadoop.tmp.dir exists, and ***don't put it under /tmp***   
 
 * Configure `hdfs-site.xml`  
   Based on how many slaves you are, make sure the `dfs.replication` value less equal than the number of slaves.  
@@ -91,12 +91,14 @@ Download the Hadoop binary file from apache site to master server, and configure
 * Format namenode in master with user hadoop  
   `hadoop namenode -format` 
 * Start Hadoop  
-  ```start-dfs.sh  
+  ```
+     start-dfs.sh  
      start-yarn.sh
   ```
   Open [http://Master IP:50070](http://Master IP:50070) to view Hadoop status
 * Stop Hadoop
-  ```stop-yarn.sh
+  ```
+     stop-yarn.sh
      stop-dfs.sh
   ```
-> You may search google for any issue 
+> You may search google for any issues
