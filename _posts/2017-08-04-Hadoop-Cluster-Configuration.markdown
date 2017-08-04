@@ -54,7 +54,7 @@ Download the Hadoop binary file from apache site to master server, and configure
   > Make sure the path of hadoop.tmp.dir exists, and ***don't put it under /tmp***   
 
 * Configure `hdfs-site.xml`  
-  Based on how many slaves you are, make sure the `dfs.replication` value less equal than the number of slaves.  
+  Based on how many slaves you are, make sure the `dfs.replication` value less than the number of slaves.  
   ```xml
   <configuration>
     <property>
