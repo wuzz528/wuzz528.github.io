@@ -1,5 +1,3 @@
-# Hadoop Cluster Configuration Guide (Draft)
-
 ## Environment Configuration
 
 ### User configuration
