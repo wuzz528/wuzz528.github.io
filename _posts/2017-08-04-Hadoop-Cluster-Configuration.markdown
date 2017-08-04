@@ -87,7 +87,7 @@ Download the Hadoop binary file from apache site to master server, and configure
 * Copy the configured hadoop directory into all slaves  
   `scp -r $HADOOP_HOME hadoop@slave`
   
-> Put $HADOOP_HOME at same location on all slaves, and run `sudo chown -R hadoop:hadoop $HADOOP_HOME` on all slaves if needed
+> Put $HADOOP_HOME on all slaves with same location as master, and run `sudo chown -R hadoop:hadoop $HADOOP_HOME` on all slaves if needed
 
 ## Start & Stop Hadoop
 
