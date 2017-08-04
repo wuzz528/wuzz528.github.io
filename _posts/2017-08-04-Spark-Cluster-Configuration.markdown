@@ -18,9 +18,7 @@ In $SPARK_HOME/conf:
 
 * Start and Stop Spark cluster  
   Start Spark cluster by run
-  ```
-  $SPARK_HOME/sbin/start-all.sh
-  ```, then open [http://Master IP:8080](http://Master IP:8080) to view Spark status.  
+  `$SPARK_HOME/sbin/start-all.sh`, then open [http://Master IP:8080](http://Master IP:8080) to view Spark status.  
   Stop Spark cluster by run `$SPARK_HOME/sbin/stop-all.sh`
 
 * Test with Spark PI example  
@@ -35,3 +33,4 @@ In $SPARK_HOME/conf:
   /usr/local/spark/examples/jars/spark-examples_2.11-2.2.0.jar \
   100000
   ```
+  Check the Spark Web UI to see results.
