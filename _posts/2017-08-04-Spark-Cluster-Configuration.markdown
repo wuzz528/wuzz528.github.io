@@ -2,7 +2,8 @@ Following the [Hadoop configurations](https://zhaojunlucky.github.io/2017/08/04/
  
 In $SPARK_HOME/conf:
 
-* Configure `spark-env.sh`  
+* Configure `spark-env.sh`   
+
   ```cp spark-env.sh.template spark-env.sh ``` and add following:  
   ```
   PYSPARK_DRIVER_PYTHON=python3
