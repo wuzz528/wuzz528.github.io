@@ -9,6 +9,7 @@
   `sudo passwd hadoop`
 * Add hadoop user into sudoers
   `sudo adduser hadoop sudo`  
+  
 > You Need configure hadoop user on all related servers
 
 ### SSH configuration
@@ -22,6 +23,7 @@ Master needs connect to all slaves via ssh without password, we need copy master
     `ssh-keygen -t rsa -b 4096`
 * Copy master's public key to all slaves  
   `ssh-copy-id haddop@slaves`
+  
 > Then in master server can ssh to any slaves without input the password
 
 ### Java Installation
@@ -61,9 +63,10 @@ Download the Hadoop binary file from apache site to master server, and configure
         <name>dfs.replication</name>
         <value>2</value>
     </property>
-	<property>                        	<name>dfs.namenode.datanode.registration.ip-hostname-check</name>                   
-	    <value>false</value>
-	</property>
+    <property>
+	<name>dfs.namenode.datanode.registration.ip-hostname-check</name>                   
+	<value>false</value>
+    </property>
   </configuration>
   ```
 > The `dfs.namenode.datanode.registration.ip-hostname-check` will disable the IP hostname check if you don't want it  
