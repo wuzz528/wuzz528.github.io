@@ -81,9 +81,9 @@ Download the Hadoop binary file from apache site to master server, and configure
   ```
 
 * Configure `slaves`  
-  Edit file `slaves` add all slaves' IP address or hostname into it line by line.
+  Edit file `slaves` add all slaves' IP address or hostname into it line by line. Master also can be added as slave.
 
-* Add HADOOP_HOME, and add $HADOOP_HOME/sbin, $HADOOP_HOME/bin into PATH in master server
+* Add HADOOP_HOME, and add $HADOOP_HOME/bin into PATH in master server
 * Copy the configured hadoop directory into all slaves  
   `scp -r $HADOOP_HOME hadoop@slave`
   
