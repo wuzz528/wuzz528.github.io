@@ -64,8 +64,8 @@ Download the Hadoop binary file from apache site to master server, and configure
         <value>2</value>
     </property>
     <property>
-	<name>dfs.namenode.datanode.registration.ip-hostname-check</name>                   
-	<value>false</value>
+        <name>dfs.namenode.datanode.registration.ip-hostname-check</name>                   
+        <value>false</value>
     </property>
   </configuration>
   ```
@@ -89,9 +89,9 @@ Download the Hadoop binary file from apache site to master server, and configure
 * Copy the configured hadoop directory into all slaves  
   `scp -r $HADOOP_HOME hadoop@slave`
 
-## Start Hadoop
+## Start & Stop Hadoop
 
-* Format namenode in master with user hadoop  
+* Format namenode in master with user hadoop (one-time operation)  
   `hadoop namenode -format` 
 * Start Hadoop  
   ```
