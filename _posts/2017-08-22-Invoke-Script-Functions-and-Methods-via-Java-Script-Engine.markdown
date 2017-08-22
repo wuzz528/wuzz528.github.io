@@ -24,7 +24,7 @@ ScriptEngine jsEngine = manager.getEngineByExtension("js");
 // put binding context
 jsEngine.put("url", "username=a&category=a book");
 try{
-    Object result = jsEngine.eval("encodeURI(name)");
+    Object result = jsEngine.eval("encodeURI(url)");
     System.out.println(result);
 }catch (ScriptException e){
     e.printStackTrace();
