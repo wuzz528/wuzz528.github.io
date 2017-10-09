@@ -1,7 +1,7 @@
 ## Allow all connections  
-Edit /etc/postgresql/<version>/main/pg_hba.conf, add `host    all             all             0.0.0.0/0               md5` in section `IPv4 local connections`  
+Edit /etc/postgresql/${version}/main/pg_hba.conf, add `host    all             all             0.0.0.0/0               md5` in section `IPv4 local connections`  
 ## Listen on all IP addresses
-Edit /etc/postgresql/<version>/main/postgres.conf, in section `Connection Settings`, uncomment `listen_addresses = 'localhost'`, change the `localhost` to `*`
+Edit /etc/postgresql/${version}/main/postgres.conf, in section `Connection Settings`, uncomment `listen_addresses = 'localhost'`, change the `localhost` to `*`
 ## Create a superuser
 Run in shell,  
 1. `su - postgres`  
