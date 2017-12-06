@@ -1,3 +1,10 @@
+---
+layout: post
+title:  " Using HTTP/2 Client in Java 9"
+date:   2017-11-08 21:27:21 +0800
+categories: Java
+---
+
 ## Using HTTP/2 Client in Java 9
 To use HTTP/2 in Java 9, it's required to declare the dependency of module `jdk.incubator.httpclient`. Here is the Java 9 [module overview summary](https://docs.oracle.com/javase/9/docs/api/overview-summary.html).
 

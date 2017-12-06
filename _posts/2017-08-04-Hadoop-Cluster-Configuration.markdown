@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Hadoop Cluster Configuration"
+date:   2017-08-04 21:27:21 +0800
+categories: Hadoop
+---
+
 ## Environment Configuration
 
 ### User configuration

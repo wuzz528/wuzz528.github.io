@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Linux Sed Command"
+date:   2017-07-24 21:27:21 +0800
+categories: Linux
+---
+
 ## Basic Usage: ##
 - replace a string in a file<br>
   *`sed -i -- "s/<string to be replaced>/<string will be replaced to>/g" $file`*<br>

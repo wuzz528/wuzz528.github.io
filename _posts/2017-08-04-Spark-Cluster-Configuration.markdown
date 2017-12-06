@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Spark Cluster Configuration"
+date:   2017-08-04 21:27:21 +0800
+categories: Spark
+---
+
 Following the [Hadoop configurations](https://zhaojunlucky.github.io/2017/08/04/Hadoop-Cluster-Configuration.html).
  
 In $SPARK_HOME/conf:

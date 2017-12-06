@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Invoke Script Functions and Methods via JavaScript Engine"
+date:   2017-08-22 21:27:21 +0800
+categories: Java
+---
+
 ## List supported script engines  
 {% highlight java linenos=table %}
 ScriptEngineManager manager = new ScriptEngineManager();

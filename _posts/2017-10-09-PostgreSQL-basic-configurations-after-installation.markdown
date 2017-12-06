@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "PostgreSQL Basic Configurations After Installation"
+date:   2017-10-09 21:27:21 +0800
+categories: Postgres
+---
+
 ## Allow all connections  
 Edit /etc/postgresql/${version}/main/pg_hba.conf, add `host    all             all             0.0.0.0/0               md5` in section `IPv4 local connections`  
 ## Listen on all IP addresses
