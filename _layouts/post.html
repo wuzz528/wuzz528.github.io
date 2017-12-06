@@ -10,9 +10,22 @@ layout: default
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         {{ page.date | date: date_format }}
       </time>
+      <time datetime="{{ page.update | date_to_xmlschema }}" itemprop="dateUpdated">
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        {{ page.update | date: date_format }}
+      </time>
       {% if page.author %}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {% endif %}</p>
+      {% endif %}
+
+      {% if page.categories %}
+        Categories：
+        {% for category in page.categories %}
+          <a href="{{ site.url }}/categories#{{ page.categories }}">{{ category | escape }}</a>; 
+        {% endfor %}
+      {% endif %}
+
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
