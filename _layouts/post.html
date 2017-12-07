@@ -19,7 +19,7 @@ layout: default
       {% endif %}
 
       {% if page.categories %}
-        <span class="label label-default"> | Categories：
+        <span> | Categories：
         {% for category in page.categories %}
           <a href="{{ site.url }}/categories#{{ page.categories }}">{{ category | escape }}</a>; 
         {% endfor %}
