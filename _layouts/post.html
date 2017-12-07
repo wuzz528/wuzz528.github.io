@@ -58,7 +58,7 @@ layout: default
         {% if post.url != page.url %}
           {% if page.categories contains category %}
             {% assign sameTagCount = sameTagCount | plus: 1 %}
-            {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
+            {% capture tagmarkup %} <span class="label label-default"><a href="{{ site.baseurl }}/categories/#{{ category }}">{{ category }}</a></span> {% endcapture %}
             {% assign commonTags = commonTags | append: tagmarkup %}
           {% endif %}
         {% endif %}
