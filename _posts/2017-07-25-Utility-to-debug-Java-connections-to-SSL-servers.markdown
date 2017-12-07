@@ -5,7 +5,6 @@ date:   2017-07-25 21:27:21 +0800
 categories: Java
 ---
 
-# Utility to debug Java connections to SSL servers
 If the certificate of the host is not valid (self signed) or didn't well configured in java keystore, then it will fail to connect.
 
 {% highlight java linenos=table %}
