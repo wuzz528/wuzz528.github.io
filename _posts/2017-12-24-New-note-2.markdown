@@ -1,0 +1,7 @@
+---
+layout: post
+title: "New note 2"
+date: 2017-12-24 00:38:48 +0800
+categories: test
+---
+
