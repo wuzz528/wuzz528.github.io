@@ -1,4 +1,5 @@
 ---
+update: 2017-12-24 20:32:10 +0800
 layout: post
 title: "New note 2"
 date: 2017-12-24 00:38:48 +0800
