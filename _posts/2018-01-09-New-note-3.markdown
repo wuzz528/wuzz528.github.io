@@ -1,0 +1,25 @@
+---
+layout: post
+date: 2018-01-09 16:23:40 +0800
+categories: cat1 cat2
+title: New note 3
+update: 2018-01-11 16:06:09 +0800
+---
+
+# ds
+1. check configuration
+2. edit 
+3. save
+
+
+
+header 1 | header 2
+---|---
+row 1 col 1 | row 1 col 2
+row 2 col 1 | row 2 col 2
+
+# 
+
+kl
+
+update 2
